@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" >
 <h1>Payment Form</h1>
 
 <div fxLayout="row" fxLayoutAlign="space-between">
@@ -29,6 +29,16 @@
   <div fxLayout="column">
     <span>Amount</span>
     <span>{{ amount | currency:'THB ' }}</span>
+  </div>
+</div>
+<div fxLayout="row" fxLayoutAlign="space-between" >
+  <div fxLayout="column">
+    <label >Miles</label>
+    <input type="text" (input)="onChangeMiles($event.target.value)" />
+  </div>
+  <div fxLayout="column">
+    <span>Kilometers</span>
+    <span>{{ miles | convert |number : '1.1-2'}}</span>
   </div>
 </div>
 </div>

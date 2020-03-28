@@ -9,6 +9,7 @@ export class AppComponent {
   receiverName = '';
   paymentDate = '';
   amount = 0;
+  miles = 0;
   onChangeReceiver(enterReceiver: string) {
   this.receiverName = enterReceiver;
   }
@@ -18,5 +19,8 @@ export class AppComponent {
   onChangeAmount(value: number) {
   this.amount = value;
   }
+  onChangeMiles(value: number) {
+    this.miles = value;
+    }
 
 }
