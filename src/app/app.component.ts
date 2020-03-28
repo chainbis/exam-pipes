@@ -6,5 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'pipes';
+  receiverName = '';
+  paymentDate = '';
+  amount = 0;
+  onChangeReceiver(enterReceiver: string) {
+  this.receiverName = enterReceiver;
+  }
+  onChangePayment(value: string) {
+  this.paymentDate = value;
+  }
+  onChangeAmount(value: number) {
+  this.amount = value;
+  }
+
 }
